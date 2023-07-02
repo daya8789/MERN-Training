@@ -1,0 +1,18 @@
+//3.WAP to print area and perimeter of rectangle , taking input from the user , using prompt
+
+    //    Solution
+function Rectangle(){
+    var Length = prompt("Enter the Length of Rectangle?");
+    var Width = prompt("Enter the Width of Rectangle?");
+    var Area = parseInt(Length)*parseInt(Width);
+    var Perimeter = 2*(parseInt(Length)+parseInt(Width));
+    console.log("Length = "+Length+" Width = "+Width);
+    console.log("The Area of Rectangle is: "+Area);
+    console.log("The Perimeter of Rectangle is: "+Perimeter);
+}
+undefined
+Rectangle();
+VM102:9 Length = 12 Width = 10
+VM102:10 The Area of Rectangle is: 120
+VM102:11 The Perimeter of Rectangle is: 44
+undefined
