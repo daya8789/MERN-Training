@@ -1,0 +1,28 @@
+//Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word into upper case.
+//Example string : ‘learn javascript from brain mentors’
+//Expected Output : ‘Learn Javascript From Brain Mentors
+
+    //    Solution
+
+function ProperCase(str){
+    var array = str.split(" ");
+    var newArray = [];
+    for(var i=0; i<array.length; i++){
+        newArray.push(array[i].charAt(0).toUpperCase()+array[i].slice(1));
+    }
+    return newArray.join(" ");
+}
+undefined
+ProperCase(console.log("learn javascript from brain mentors"));
+VM488:1 learn javascript from brain mentors
+VM448:8 Uncaught TypeError: Cannot read properties of undefined (reading 'split')
+    at ProperCase (<anonymous>:8:21)
+    at <anonymous>:1:1
+ProperCase @ VM448:8
+(anonymous) @ VM488:1
+console.log(ProperCase("ajit kumar yadav"));
+VM520:1 Ajit Kumar Yadav
+undefined
+console.log(ProperCase("lear javascript from brain mentors"));
+VM656:1 Lear Javascript From Brain Mentors
+undefined
