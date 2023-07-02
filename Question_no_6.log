@@ -1,0 +1,39 @@
+//6. Write a JavaScript function that Print Sum of Even Place and Odd Place Digit
+
+//E.g num = 2914
+//O/p Even Place (9+4)
+//Odd Place 2+1
+
+    //    Solution
+function reverse(n){
+    var num = 0;
+    while(n != 0){
+        num = (num * 10)+(n%10);
+        n = Math.floor(n/10);
+    }
+    return num;
+}
+
+function sum(n){
+    n = reverse(n);
+    var evenSum = 0;
+    var oddSum = 0;
+    var c = 1;
+    while(n != 0){
+        if(c%2==0){
+            evenSum += n % 10;
+        }
+        else{
+            oddSum += n % 10;
+        }
+        n = Math.floor(n/10);
+        c++;
+    }
+    console.log("EvenSum is: "+evenSum);
+    console.log("OddSum is: "+oddSum);
+}
+undefined
+sum(23456);
+VM234:32 EvenSum is: 8
+VM234:33 OddSum is: 12
+undefined
