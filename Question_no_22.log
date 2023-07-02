@@ -1,0 +1,18 @@
+// 22. Write a function to find the second largest number in an array.
+// 7. Write a function to find the second largest number in an array.
+
+// ex:- var arr = [12,4,6,9,2,15,3,9];
+
+// 		output second largest : 12
+
+    //    Solution
+
+var arr = [12,4,6,9,2,15,3,9];
+ var arr=arr.sort((first, second)=>first-second);
+undefined
+arr[arr.length-2];
+12
+arr;
+(8) [2, 3, 4, 6, 9, 9, 12, 15]
+arr[arr.length-2];
+12

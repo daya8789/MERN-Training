@@ -1,0 +1,11 @@
+// 19. Write a function to find the sum of all elements in an array.
+// 4. Write a function to find the sum of all elements in an array.
+// ex:- arr = [1,2,3,4,5];
+
+// output = 15;
+
+    //    Solution
+
+var arr = [1,2,3,4,5];
+arr.reduce((acc, e)=>acc+e, 0);
+15
