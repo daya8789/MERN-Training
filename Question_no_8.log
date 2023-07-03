@@ -1,0 +1,40 @@
+// 8. Write a JS Function to validate Phone Number 
+//    Only number and must be 10 digit long
+
+    //   Solution
+
+function mobile(){
+    var s = prompt("");
+    var num = parseInt(s);
+    console.log(num);
+    var c=0;
+    while(num!=0){
+        num%10;
+        var num = Math.floor(num/10);
+        c++;
+    }
+    if(c==10){
+        
+        console.log("Number is Valid");
+        
+    }
+    else{
+        
+        console.log("Number is Not Valid");
+    }
+    
+}
+
+undefined
+mobile();
+VM1419:9 8789532596
+VM1419:18 Number is Valid
+undefined
+mobile();
+VM1419:9 8789654345329
+VM1419:23 Number is Not Valid
+undefined
+mobile();
+VM1419:9 34546567
+VM1419:23 Number is Not Valid
+undefined
